@@ -4,8 +4,9 @@
 	//#macro CARDINAL_DIR round(direction/90)
 	#macro ROOM_START Room1
 
-	#macro RES_W 1280
-	#macro RES_H 720
+	#macro RES_W 640
+	#macro RES_H 480
+	
 	
 	
 	/*

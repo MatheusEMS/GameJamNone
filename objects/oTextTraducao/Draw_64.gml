@@ -23,7 +23,7 @@ draw_set_valign(-1);
 
 
 //jeito 2
-var _text = global.dialogues.characters[character].dialogue[dialogueNumber]; 
+var _text = "meme"; 
 var _text2 = SCRIB_JITTER + "[c_green][shake]Teste [delay,1000]scribble,[speed,0.25]teste [pause][b]testonho[/b][/speed]";
 
 var _scribbleObject2 = scribble(_text2);
@@ -32,7 +32,7 @@ _scribbleObject2.draw(RES_W/2,RES_H/4,typist2); //x e y , opcional typist
 
 
 
-var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject = scribble(_text).wrap(200) e vai indo
+var _scribbleObject = scribble(_text2); //pode colocar . EX: var _scribbleObject = scribble(_text).wrap(200) e vai indo
 //_scribbleObject.starting_format("FontTest",c_white);
 //_scribbleObject.blend(c_white,1); //cor e alpha
 _scribbleObject.wrap(200) //max_width, [max_height], [character_wrap] true ou false

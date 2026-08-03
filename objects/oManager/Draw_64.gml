@@ -1,0 +1,47 @@
+
+/// @description Scribble
+t ++;
+
+
+/*
+//jeito 2
+
+var _text2 = SCRIB_JITTER + "[c_green][shake]Teste [delay,1000]scribble,[speed,0.25]teste [pause][b]testonho[/b][/speed]";
+
+var _scribbleObject2 = scribble(_text2);
+_scribbleObject2.starting_format("FontPrincipal",c_white);
+_scribbleObject2.align(fa_center,fa_middle); // haligh, valigh
+_scribbleObject2.draw(RES_W/2,RES_H/4,typist2); //x e y , opcional typist
+*/
+
+
+//pega o conetudo da tela certa
+scrConteudoAtual();
+
+
+if keyboard_check_pressed(vk_tab)
+{
+	self.typist.skip(); //aparece todo o texto
+}
+
+/*
+if keyboard_check_pressed(vk_enter)
+{
+	self.typist.out(0.4,2); //fade out, desaparece o texto inves de aparecer	
+}
+
+if keyboard_check_pressed(vk_space)
+{
+	self.typist2.unpause();
+	self.typist.unpause(); //despausa texto parado com a tag [pause]
+}*/
+
+draw_set_halign(fa_right);
+draw_text(RES_W - 16,RES_H - 32, msgPassar);
+draw_set_halign(-1);
+
+var _typistState = self.typist.get_state();
+draw_text(32,32,"state typist: " + string(_typistState));
+draw_text(32,65,"caminho: " + global.caminho);
+draw_text(32,86,"numero: " + string(global.numero));
+draw_text(32,112,"esta numa escolha: " + string(escolha));
