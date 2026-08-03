@@ -69,10 +69,10 @@ var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject 
 					
 					
 					//criando botoes e definindo o caminho
-					var btnRota1 = instance_create_depth(RES_W/1.5,RES_H/4,0,oBtnEscolha);
+					var btnRota1 = instance_create_layer(RES_W/1.5,RES_H/4,"Instances",oBtnEscolha);
 					btnRota1.rota = "rota1";
 					
-					var btnRota2 = instance_create_depth(RES_W/4,RES_H/4,0,oBtnEscolha);
+					var btnRota2 = instance_create_layer(RES_W/4,RES_H/4,"Instances",oBtnEscolha);
 					btnRota2.rota = "rota2";
 				
 				break;
