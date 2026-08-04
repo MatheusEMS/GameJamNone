@@ -34,7 +34,7 @@ var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject 
 				
 				case 1:
 				
-					_text = "pagina 2"; 
+					_text = "pagina 2 -agagagiajinafiuhasffuifhasiufhuiafhnuifniuhui"; 
 					_scribbleObject = scribble(_text);
 					
 					_scribbleObject.starting_format("FontPrincipal",c_white);

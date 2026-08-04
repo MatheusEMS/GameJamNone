@@ -29,6 +29,7 @@ typist.function_per_char(function(textElement, textPosition, typist)
 	show_debug_message(textPosition);
 });
 
+tempoComeco = 1;
 
 passar = false;
 escolha = false;

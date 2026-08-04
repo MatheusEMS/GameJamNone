@@ -19,7 +19,7 @@ _scribbleObject2.draw(RES_W/2,RES_H/4,typist2); //x e y , opcional typist
 scrConteudoAtual();
 
 
-if keyboard_check_pressed(vk_tab)
+if keyboard_check_pressed(vk_space) && tempoComeco < 0
 {
 	self.typist.skip(); //aparece todo o texto
 }
@@ -36,12 +36,8 @@ if keyboard_check_pressed(vk_space)
 	self.typist.unpause(); //despausa texto parado com a tag [pause]
 }*/
 
-draw_set_halign(fa_right);
-draw_text(RES_W - 16,RES_H - 32, msgPassar);
+draw_set_colour(c_white);
+draw_set_halign(fa_center);
+draw_text(RES_W /2,RES_H - 32, msgPassar);
 draw_set_halign(-1);
-
-var _typistState = self.typist.get_state();
-draw_text(32,32,"state typist: " + string(_typistState));
-draw_text(32,65,"caminho: " + global.caminho);
-draw_text(32,86,"numero: " + string(global.numero));
-draw_text(32,112,"esta numa escolha: " + string(escolha));
+draw_set_colour(-1);

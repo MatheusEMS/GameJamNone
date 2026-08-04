@@ -1,6 +1,7 @@
 if clicarPassar
 {
 	//passou para a proxima tela
+	tempoComeco = 1;
 	passar = false;
 	tempo = 0.5;
 	clicarPassar = false;
