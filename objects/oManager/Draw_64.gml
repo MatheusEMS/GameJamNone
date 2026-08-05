@@ -1,5 +1,6 @@
 //debugs
 
+
 draw_set_colour(c_white);
 
 var _typistState = self.typist.get_state();

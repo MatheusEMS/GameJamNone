@@ -1,4 +1,6 @@
 
+draw_set_font(FontDialogo);
+
 /// @description Scribble
 t ++;
 
@@ -41,3 +43,4 @@ draw_set_halign(fa_center);
 draw_text(RES_W /2,RES_H - 32, msgPassar);
 draw_set_halign(-1);
 draw_set_colour(-1);
+draw_set_font(FontPrincipal);

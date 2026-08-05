@@ -63,7 +63,9 @@
   },
   "name":"NoneJam202602",
   "resources":[
+    {"id":{"name":"FontDialogo","path":"fonts/FontDialogo/FontDialogo.yy",},},
     {"id":{"name":"FontPrincipal","path":"fonts/FontPrincipal/FontPrincipal.yy",},},
+    {"id":{"name":"FontTexto","path":"fonts/FontTexto/FontTexto.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"ObjectMusicBlock","path":"objects/ObjectMusicBlock/ObjectMusicBlock.yy",},},
     {"id":{"name":"ObjectMusicManager","path":"objects/ObjectMusicManager/ObjectMusicManager.yy",},},

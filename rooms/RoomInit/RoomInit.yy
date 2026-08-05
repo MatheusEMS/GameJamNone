@@ -33,9 +33,9 @@
         {"name":"g_ChromaSpreadAmount","type":0,"value":"0.25",},
         {"name":"g_CamOffsetScale","type":0,"value":"0.5",},
         {"name":"g_DistortTexture","type":2,"value":"_filter_heathaze_noise_sprite",},
-      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMREffectLayer":"","%Name":"Effect_pixel_borrado","depth":400,"effectEnabled":true,"effectType":"_filter_pixelate","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_pixel_borrado","properties":[
-        {"name":"g_CellSize","type":0,"value":"3",},
+        {"name":"g_CellSize","type":0,"value":"1.5",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMREffectLayer":"","%Name":"Effect_vento","depth":500,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_vento","properties":[
         {"name":"param_sprite","type":2,"value":"spr_ponto",},
