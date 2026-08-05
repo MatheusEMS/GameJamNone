@@ -17,12 +17,12 @@ var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject 
 			{
 				case 0:
 				
-					_text = "meme"; 
+					_text = "dia 1: \n Rádio: 'Já faz uns dias que a praga de Midas apareceu na nossas terras, o governo está ciente e procura formas de combater a doença atualmente desconhecida, ela já tomou uma boa parte do Brasil tendo apenas uma parte de São paulo, paraná, santa catarina e Rio grande do sul estão livres da praga até o momento, os países Peru, Equador, Colômbia, e entre outros foram completamente engolidos pelo Midas...'"; 
 					_scribbleObject = scribble(_text);
 	
 					_scribbleObject.starting_format("FontPrincipal",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
-					_scribbleObject.wrap(200) //max_width, [max_height], [character_wrap] true ou false
+					_scribbleObject.wrap(600) //max_width, [max_height], [character_wrap] true ou false
 					_scribbleObject.align(fa_center,fa_middle); // haligh, valigh
 					//_scribbleObject.line_spacing(8); //spacing
 					//_scribbleObject.line_height(12,40); //min, max
@@ -85,6 +85,20 @@ var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject 
 			{
 				case 0:
 					_text = "rota 1 - conversa 1"; 
+					_scribbleObject = scribble(_text);
+	
+					_scribbleObject.starting_format("FontPrincipal",c_white);
+					//_scribbleObject.blend(c_white,1); //cor e alpha
+					_scribbleObject.wrap(200) //max_width, [max_height], [character_wrap] true ou false
+					_scribbleObject.align(fa_center,fa_middle); // haligh, valigh
+					//_scribbleObject.line_spacing(8); //spacing
+					//_scribbleObject.line_height(12,40); //min, max
+					//_scribbleObject.origin(100,100) //x e y meio que um offset
+					//_scribbleObject.bezier(0,0, 640,-160, 720,160, 1000,-64) //x1, y1, x2, y2, x3, y3, x4, y4 o text segue uma curva
+					_scribbleObject.draw(RES_W/2,RES_H/2,typist); //x e y , opcional typist
+				break;
+				case 1:
+					_text = "rota 1 - conversa 2"; 
 					_scribbleObject = scribble(_text);
 	
 					_scribbleObject.starting_format("FontPrincipal",c_white);
