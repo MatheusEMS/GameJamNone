@@ -2,15 +2,73 @@
 var _sfxVol = global.SFX_VOL * global.master_sfx_vol;
 
 
-//coin snd
-if coinSnd == true
+//chiado snd
+if chiado == true
 {
-	var _snd = audio_play_sound(sndCoin,8,false);
+	var _snd = audio_play_sound(snd_chiado,8,false);
 	audio_sound_gain(_snd, _sfxVol, 0);
 	
 	//reset
-	coinSnd = false;
+	chiado = false;
 }
+
+if coruja == true
+{
+	var _snd = audio_play_sound(snd_coruja,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	coruja = false;
+}
+
+
+if jumpscare == true
+{
+	var _snd = audio_play_sound(snd_jumpscare,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	jumpscare = false;
+}
+
+
+if ratos1 == true
+{
+	var _snd = audio_play_sound(snd_ratos_1,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	ratos1 = false;
+}
+
+if ratos2 == true
+{
+	var _snd = audio_play_sound(snd_ratos_2,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	ratos2 = false;
+}
+
+if ratos3 == true
+{
+	var _snd = audio_play_sound(snd_ratos_3,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	ratos3 = false;
+}
+
+
+if mosquito == true
+{
+	var _snd = audio_play_sound(snd_mosquito,8,false);
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	//reset
+	mosquito = false;
+}
+
 
 
 
@@ -35,23 +93,64 @@ if buttonReleaseSnd == true
 	//turn sound effect on and store the instance of the sound
 	
 	
-	/*if fireSndLoop == true && !audio_is_playing(fireSndLoopInst)
+	if radioSndLoop == true && !audio_is_playing(radioSndLoopInst)
 	{
-		fireSndLoopInst = audio_play_sound( musica_q_loopa ,6,true);		
+		radioSndLoopInst = audio_play_sound( snd_radio ,6,true);		
 		
 	}
 	
-	if audio_is_playing(fireSndLoopInst)
+	if audio_is_playing(radioSndLoopInst)
 	{
-		audio_sound_gain( fireSndLoopInst, _sfxVol,0);
+		audio_sound_gain( radioSndLoopInst, _sfxVol,0);
 	}
 	
-	if fireSndLoop == false && audio_is_playing( fireSndLoopInst)
+	if radioSndLoop == false && audio_is_playing( radioSndLoopInst)
 	{
-		audio_stop_sound(fireSndLoopInst);
+		audio_stop_sound(radioSndLoopInst);
 	}
 
-	fireSndLoop = false;*/
+	radioSndLoop = false;
+	
+	
+		
+	if suspenseSndLoop == true && !audio_is_playing(suspenseSndLoopInst)
+	{
+		suspenseSndLoopInst = audio_play_sound( snd_suspense ,6,true);		
+		
+	}
+	
+	if audio_is_playing(suspenseSndLoopInst)
+	{
+		audio_sound_gain( suspenseSndLoopInst, _sfxVol,0);
+	}
+	
+	if suspenseSndLoop == false && audio_is_playing( suspenseSndLoopInst)
+	{
+		audio_stop_sound(suspenseSndLoopInst);
+	}
+
+	suspenseSndLoop = false;
+	
+	
+	
+	
+	if maquinaSndLoop == true && !audio_is_playing(maquinaSndLoopInst)
+	{
+		maquinaSndLoopInst = audio_play_sound( snd_suspense ,6,true);		
+		
+	}
+	
+	if audio_is_playing(maquinaSndLoopInst)
+	{
+		audio_sound_gain( maquinaSndLoopInst, _sfxVol,0);
+	}
+	
+	if maquinaSndLoop == false && audio_is_playing( maquinaSndLoopInst)
+	{
+		audio_stop_sound(maquinaSndLoopInst);
+	}
+
+	maquinaSndLoop = false;
 	
 	
 	

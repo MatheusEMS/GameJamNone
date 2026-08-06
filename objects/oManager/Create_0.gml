@@ -43,3 +43,5 @@ typist.function_on_complete(function(textElement,typist){
 	passar = true;
 });
 
+
+final = false;

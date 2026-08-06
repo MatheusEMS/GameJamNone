@@ -21,7 +21,7 @@ _scribbleObject2.draw(RES_W/2,RES_H/4,typist2); //x e y , opcional typist
 scrConteudoAtual();
 
 
-if keyboard_check_pressed(vk_space) && tempoComeco < 0
+if keyboard_check_pressed(vk_space) && tempoComeco < 0 && !final //nao pular na ultimo tela do joog
 {
 	self.typist.skip(); //aparece todo o texto
 }

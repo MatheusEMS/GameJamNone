@@ -6,7 +6,7 @@ if _cursor
 	//efeito btn qd mouse estiver em cima
 	image_blend = c_blue;
 	
-	if (mouse_check_button_pressed(mb_left) && clicou == false)
+	if (!instance_exists(oTransition) && mouse_check_button_pressed(mb_left) && clicou == false)
 	{
 		switch(funcao)
 		{

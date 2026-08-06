@@ -17,7 +17,7 @@ var _spacing		= 20;
 			{
 				case 0:
 				
-					_text = "dia 1:"; 
+					_text = "[delay,1000]dia 1:"; 
 					_scribbleObject = scribble(_text);
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
@@ -154,11 +154,16 @@ var _spacing		= 20;
 					
 					
 					//criando botoes e definindo o caminho
-					var btnRota1 = instance_create_layer(RES_W/1.5,RES_H/4,"Instances",oBtnEscolha);
+					var btnRota1 = instance_create_layer(RES_W/4,RES_H/4,"Instances",oBtnEscolha);
 					btnRota1.rota = "rota1";
+					btnRota1.nomebtn = "1) outra escolha";
+					btnRota1.image_xscale = 4;
 					
-					var btnRota2 = instance_create_layer(RES_W/4,RES_H/4,"Instances",oBtnEscolha);
+					
+					var btnRota2 = instance_create_layer(RES_W/1.5,RES_H/4,"Instances",oBtnEscolha);
 					btnRota2.rota = "rota2";
+					btnRota2.nomebtn = "2) escolha final teste";
+					btnRota2.image_xscale = 4;
 				
 				break;
 			}
@@ -204,18 +209,24 @@ var _spacing		= 20;
 			switch(global.numero)
 			{
 				case 0:
-					_text = "rota 2 - meme"; 
+				//setando as var para o final
+					final = true;
+					global.FinalNeutro = true;
+				
+					_text = "rota 2 - FINAL TESTE- teste para finais testando mmsmsmsmsmsmsmsmsmsmmssm"; 
 					_scribbleObject = scribble(_text);
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
-					_scribbleObject.wrap(200) //max_width, [max_height], [character_wrap] true ou false
+					_scribbleObject.wrap(600) //max_width, [max_height], [character_wrap] true ou false
 					_scribbleObject.align(fa_center,fa_middle); // haligh, valigh
 					_scribbleObject.line_spacing(_spacing); //spacing
 					//_scribbleObject.line_height(12,40); //min, max
 					//_scribbleObject.origin(100,100) //x e y meio que um offset
 					//_scribbleObject.bezier(0,0, 640,-160, 720,160, 1000,-64) //x1, y1, x2, y2, x3, y3, x4, y4 o text segue uma curva
 					_scribbleObject.draw(RES_W/2,RES_H/2,typist); //x e y , opcional typist
+					
+					
 				break;
 			}
 		break;

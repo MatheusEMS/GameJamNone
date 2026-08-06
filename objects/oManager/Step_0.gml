@@ -20,6 +20,15 @@ if escolha
 
 	if tempo < 0
 	{
-		msgPassar = "Aperte ESPAÇO para continuar";
+		if (final)
+		{
+			msgPassar = "Aperte ESPAÇO";
+		}else
+		{
+			msgPassar = "Aperte ESPAÇO para continuar";
+		}
 		clicarPassar = true;
+	}else if (final)
+	{
+		msgPassar = "";
 	}

@@ -1,4 +1,4 @@
-if clicarPassar
+if clicarPassar && !final
 {
 	//passou para a proxima tela
 	tempoComeco = 1;
@@ -7,4 +7,10 @@ if clicarPassar
 	clicarPassar = false;
 	msgPassar = "Aperte ESPAÇO para pular o texto";
 	global.numero ++;
+}
+
+if clicarPassar && final == true
+{
+	RoomTransition(TRANS_TYPE.FADE,RoomMenu,false);
+	Resetar();
 }
