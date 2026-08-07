@@ -13,7 +13,7 @@ typist.ease(SCRIBBLE_EASE.CIRC,
 5,5, //SCALE x e Scale y
 180,0.2); //rotation e alpha duration
 
-typist.character_delay_add("!", 1000); //add delay em certos characters
+typist.character_delay_add(".", 500); //add delay em certos characters
 
 //sounds
 //pode tocar varios sons, colocar dentro do array 
@@ -45,3 +45,12 @@ typist.function_on_complete(function(textElement,typist){
 
 
 final = false;
+
+
+//sprites
+caixa = caixa_de_dialogo_borda;
+personagem = personagem01;
+mesaSpr = mesa;
+radioSpr = radio;
+pcSpr = pc;
+micro = microscopio;

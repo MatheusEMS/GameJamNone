@@ -9,10 +9,6 @@ ratos2 = false;
 ratos3 = false;
 mosquito = false;
 
-//loopam eu acho
-radio = false;
-suspense = false;
-maquina = false;
 
 
 //sons de objetos que não se destroem ao ativa-los ex:apertar botao e dps solta-lo
