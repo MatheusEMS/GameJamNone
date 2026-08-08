@@ -8,6 +8,7 @@ ratos1 = false;
 ratos2 = false;
 ratos3 = false;
 mosquito = false;
+button = false;
 
 
 

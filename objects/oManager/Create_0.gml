@@ -30,6 +30,7 @@ typist.function_per_char(function(textElement, textPosition, typist)
 });
 
 tempoComeco = 1;
+dia = "Dia 1";
 
 passar = false;
 escolha = false;
@@ -43,9 +44,7 @@ typist.function_on_complete(function(textElement,typist){
 	passar = true;
 });
 
-
 final = false;
-
 
 //sprites
 caixa = caixa_de_dialogo_borda;
@@ -54,3 +53,4 @@ mesaSpr = mesa;
 radioSpr = radio;
 pcSpr = pc;
 micro = microscopio;
+finalspr = noone;

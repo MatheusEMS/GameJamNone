@@ -11,6 +11,7 @@ if _cursor
 		switch(funcao)
 		{
 			case 0: //iniciar
+				oSFX.button = true;
 				RoomTransition(TRANS_TYPE.FADE,Room1,false);
 				clicou = true;
 			break;

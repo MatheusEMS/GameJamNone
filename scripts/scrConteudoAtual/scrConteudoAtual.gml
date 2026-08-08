@@ -9,7 +9,13 @@ var _scribbleObject = scribble(_text); //pode colocar . EX: var _scribbleObject 
 var _spacing		= 20;
 var _xText = RES_W/2.6;
 var _yText = RES_H/1.3;
+var _yTextBtn = RES_H/1.5; //para qd tiver uma escolha
 var _wrap = 400; 
+
+
+var _xTextFinal = RES_W/2;
+var _yTextFinal = RES_H/1.3;
+
 
 //draws - aqui esta tudo o que aparece na tela em que momento
 	switch(global.caminho)
@@ -224,20 +230,22 @@ var _wrap = 400;
 					//_scribbleObject.line_height(12,40); //min, max
 					//_scribbleObject.origin(100,100) //x e y meio que um offset
 					//_scribbleObject.bezier(0,0, 640,-160, 720,160, 1000,-64) //x1, y1, x2, y2, x3, y3, x4, y4 o text segue uma curva
-					_scribbleObject.draw(_xText,_yText,typist); //x e y , opcional typist
+					_scribbleObject.draw(_xText,_yTextBtn,typist); //x e y , opcional typist
 					
 					
 					//criando botoes e definindo o caminho
-					var btnRota1 = instance_create_layer(RES_W/4,RES_H/4,"Instances",oBtnEscolha);
+					var btnRota1 = instance_create_layer(RES_W/5,RES_H/1.25,"Instances",oBtnEscolha);
 					btnRota1.rota = "rota1";
 					btnRota1.nomebtn = "1) outra escolha";
-					btnRota1.image_xscale = 4;
+					btnRota1.image_xscale = 2.5;
+					btnRota1.image_yscale = 0.75;
 					
 					
-					var btnRota2 = instance_create_layer(RES_W/1.5,RES_H/4,"Instances",oBtnEscolha);
+					var btnRota2 = instance_create_layer(RES_W/2,RES_H/1.25,"Instances",oBtnEscolha);
 					btnRota2.rota = "rota2";
 					btnRota2.nomebtn = "2) escolha final teste";
-					btnRota2.image_xscale = 4;
+					btnRota2.image_xscale = 2.5;
+					btnRota2.image_yscale = 0.75;
 				
 				break;
 			}
@@ -287,6 +295,8 @@ var _wrap = 400;
 				//so colocar na ultima tela
 					final = true;
 					global.FinalNeutro = true;
+					
+					finalspr = final_neutro;
 				
 					_text = "rota 2 - FINAL TESTE- teste para finais testando mmsmsmsmsmsmsmsmsmsmmssm"; 
 					_scribbleObject = scribble(_text);
@@ -299,7 +309,7 @@ var _wrap = 400;
 					//_scribbleObject.line_height(12,40); //min, max
 					//_scribbleObject.origin(100,100) //x e y meio que um offset
 					//_scribbleObject.bezier(0,0, 640,-160, 720,160, 1000,-64) //x1, y1, x2, y2, x3, y3, x4, y4 o text segue uma curva
-					_scribbleObject.draw(_xText,_yText,typist); //x e y , opcional typist
+					_scribbleObject.draw(_xTextFinal,_yTextFinal,typist); //x e y , opcional typist
 					
 					
 				break;
