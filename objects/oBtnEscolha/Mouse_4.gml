@@ -1,5 +1,33 @@
 if !clicou
 {
+	switch(opcao)
+	{
+		case "pesquisa":
+			global.cura += 3;
+			global.seguranca -= 2;
+		break;
+		
+		case "porta":
+			global.seguranca += 3;
+		break;
+		
+		case "cura":
+			global.cura += 1;
+		break;
+		
+		case "Manter":
+			global.seguranca -= 3;
+			global.cura += 1;
+		break;
+		
+		case "Desconectar":
+			global.seguranca += 3;
+			global.cura -= 1;
+		break;
+		
+	}
+	
+	
 	clicou = true;
 	global.caminho = rota;
 	global.numero = 0;

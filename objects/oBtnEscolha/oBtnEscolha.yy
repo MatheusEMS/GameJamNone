@@ -31,6 +31,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"rota","filters":[],"listItems":[],"multiselect":false,"name":"rota","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"nomebtn","filters":[],"listItems":[],"multiselect":false,"name":"nomebtn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"opcao","filters":[],"listItems":[],"multiselect":false,"name":"opcao","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
