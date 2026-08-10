@@ -223,6 +223,8 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Cientista: \n Etapa 4: vira uma árvore por completo, sem chances de ser salvo;"; 
 					_scribbleObject = scribble(_text);
+					oSFX.suspenseSndLoop = true;
+					
 					
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -490,6 +492,7 @@ var _yTextFinal = RES_H/1.3;
 				case 13:
 					_text = "Cientista: \nA Praga consegue utilizar dispositivos tecnológicos como meio de transmissão..."; 
 					_scribbleObject = scribble(_text);
+					oSFX.suspenseSndLoop = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -642,6 +645,7 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Rádio: \n 'Ela já conseguiu engolir mais da metade da Rússia e...'";
 					_scribbleObject = scribble(_text);
+					//oSFX.jumpscare = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -661,7 +665,8 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Rádio: \n 'Bem, espero que a equipe destinada a encontrar a cura termine logo.'";
 					_scribbleObject = scribble(_text);
-	
+					oSFX.suspenseSndLoop = true;
+					
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
 					_scribbleObject.wrap(_wrap) //max_width, [max_height], [character_wrap] true ou false
@@ -716,7 +721,8 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Cientista: \nO laboratório começa a tremer com a multidão desesperada procurando lugares seguros.";
 					_scribbleObject = scribble(_text);
-	
+					oSFX.maquinaSndLoop = true;
+					
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
 					_scribbleObject.wrap(_wrap) //max_width, [max_height], [character_wrap] true ou false
@@ -734,7 +740,8 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Cientista: \nDiante desta situação, nossa equipe começa a criar medidas drásticas para tentar deter o avanço da praga.";
 					_scribbleObject = scribble(_text);
-	
+					oSFX.maquinaSndLoop = true;
+					
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
 					_scribbleObject.wrap(_wrap) //max_width, [max_height], [character_wrap] true ou false
@@ -752,6 +759,7 @@ var _yTextFinal = RES_H/1.3;
 				
 					_text = "Cientista: \nUma das cobaias sofreu uma transformação inesperada.";
 					_scribbleObject = scribble(_text);
+					oSFX.maquinaSndLoop = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -770,6 +778,7 @@ var _yTextFinal = RES_H/1.3;
 				case 12:
 				
 					escolha = true;
+					oSFX.maquinaSndLoop = true;
 				
 					_text = "Cientista: \n O que eu faço com a mutação?"; 
 					_scribbleObject = scribble(_text);
@@ -1000,6 +1009,7 @@ var _yTextFinal = RES_H/1.3;
 				case 12:
 					_text = "Cientista: \nEstamos no limite, o mundo precisa da cura até amanhã";
 					_scribbleObject = scribble(_text);
+					oSFX.suspenseSndLoop = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -1015,6 +1025,7 @@ var _yTextFinal = RES_H/1.3;
 				case 13:
 					_text = "Rádio: \n'...'";
 					_scribbleObject = scribble(_text);
+					oSFX.suspenseSndLoop = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -1075,6 +1086,7 @@ var _yTextFinal = RES_H/1.3;
 				case 17:
 					_text = "Cientista: \nMas existe apenas uma tentativa.";
 					_scribbleObject = scribble(_text);
+					oSFX.suspenseSndLoop = true;
 	
 					_scribbleObject.starting_format("FontTexto",c_white);
 					//_scribbleObject.blend(c_white,1); //cor e alpha
@@ -1091,6 +1103,7 @@ var _yTextFinal = RES_H/1.3;
 				case 18:
 				
 					escolha = true;
+					oSFX.suspenseSndLoop = true;
 				
 					_text = "Cientista: \n Quem será o teste final?"; 
 					_scribbleObject = scribble(_text);
